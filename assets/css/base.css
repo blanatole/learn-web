@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --color-fst: #103178;
+    --color-snd:  #FFC800;
+    --color-text: #5B6CA9;
+    --font: 'Inria Serif', serif;
+}
+
+body {
+    font-family: var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px 50px;
+    background: var(--color-snd);
+    border-radius: 100px;
+    border: 2px solid var(--color-snd);
+}
+
+.button:hover {
+    transition: all 0.6s;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
